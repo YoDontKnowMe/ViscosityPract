@@ -1,0 +1,4 @@
+Average Speed for File 1: -0.062747 meters/second
+Average Speed for File 2: -0.062285 meters/second
+Average Speed for File 3: -0.061784 meters/second
+Overall Average Speed: -0.062272 meters/second
