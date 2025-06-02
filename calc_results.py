@@ -57,12 +57,31 @@ with open(output_file, 'w') as file:
 # Print confirmation
 print(f"Averages written to {output_file}")
 
+file_name = "WRONG"
+
+match LETTER:
+    case 'a':
+        file_name = "Buis A"
+    case 'b':
+        file_name = "Buis B"
+    case 'c':
+        file_name = "Buis C"
+    case 'w':
+        file_name = "Water"
+    case _:
+        print("No file selected.")
+
 # Customize the graph
 plt.xlabel('Time (s)')
 plt.ylabel('Y (meters)')
-plt.title('Combined Graph of Three Files')
+plt.title('Grafiek van de ' + file_name + ' Files')
 plt.legend()
 plt.grid(True)
+
+# Save the graph as an image
+graph_file = FILE_PATH + LETTER + '_graph.png'
+plt.savefig(graph_file)
+print(f"Graph saved as {graph_file}")
 
 # Show the graph
 plt.show()
